@@ -6,8 +6,8 @@ module OmniAuth
       DEFAULT_SCOPE = 'profile'
 
       option :client_options, :site          => 'https://api.uber.com',
-                              :authorize_url => 'https://login.uber.com/oauth/authorize',
-                              :token_url     => 'https://login.uber.com/oauth/token'
+                              :authorize_url => 'https://login.uber.com/oauth/v2/authorize',
+                              :token_url     => 'https://login.uber.com/oauth/v2/token'
 
       uid { raw_info['uuid'] }
 
